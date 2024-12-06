@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniruddha Manmode</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script>
+        function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    
+    // Ensure elements are found
+    if (navLinks && hamburger) {
+        navLinks.classList.toggle('show');
+        hamburger.classList.toggle('active');
+    }
+}
+
+// Hide menu when a menu item is clicked
+document.querySelectorAll('.nav-links li a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        
+        if (navLinks && hamburger) {
+            navLinks.classList.remove('show');
+            hamburger.classList.remove('active');
+        }
+    });
+});
+
+    </script>   
+</head>
+<body>
+    <div class="banner"></div>
+    <div class="nav">
+        <nav>
+            <!-- Hamburger Menu -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main" id="home">
+        <div class="con1"><img src="/img/aniruddha.png" alt=""></div>
+        <div class="con2">
+            <h1>Hi, I am Aniruddha Manmode</h1>
+            <p>A Student who is curious about computers  and  networking. 
+            my goal is that to reach the level where i can say that <br> i am 
+            a good programmer and a good network engineer. So let's move 
+            forward and see what we can do. 
+            </p>
+        </div>
+    </div>
+    <div class="blog" id="blog">
+        <div class="p1">
+            <div class="project">
+                <a href="/pages/cpp.html">
+                    <img src="/img/cpp_logo.png" alt="Project">
+                </a>
+            </div>
+            <div class="project">
+                <a href="/pages/java.html">
+                    <img src="/img/Java-Logo copy.png" alt="Project">
+                </a>
+            </div>
+        </div>
+        <div class="p1">
+            <div class="project">
+                <a href="#">
+                    <img src="/img/Python-logo.png" alt="Project">
+                </a>
+            </div>
+            <div class="project">
+                <a href="#">
+                    <img src="/img/web_logo.png" alt="Project">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
