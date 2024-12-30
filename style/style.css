@@ -13,6 +13,7 @@
 
 .nav {
     padding: 20px;
+    overflow: visible;
     box-shadow: 0 8px 11px black;
     position: sticky;
     top: 0;
@@ -67,7 +68,6 @@ nav ul li a{
 }
 
 .main .con2 p {
-    margin-top: 20px;
     font-size: 15px;
 }
 
@@ -111,6 +111,109 @@ nav ul li a{
     font-weight: bold;
 }
 
+.projects {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects div {
+    padding: 20px;
+}
+
+.projects img {
+    width: 250px;
+}
+
+.projects p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: none;
+} 
+
+.projects a {
+    margin: 0px 20px 0px 20px;
+    display: grid;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 11px #861dff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.projects :hover {
+    transform: scale(0.99);
+}
+
+.projects a p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 18px 0px 0px 0px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about {
+    background-color: azure;
+    padding: 25px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h1 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.about p {
+    font-family: Arial, sans-serif;
+}
+
+.about div {
+    padding: 20px 120px 30px 120px;
+}
+
+.about ul {
+    padding: 10px 0px 10px 25px;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.619);
+    font-size: 15px;
+}
+
+footer img {
+    width: 35px;
+}
+
+footer .links {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer .links a {
+    padding: 7px;
+}
+
+footer .copyright {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 /*For Tabs*/
 @media only screen and (max-width:1455px) {
@@ -130,10 +233,42 @@ nav ul li a{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
     .blog img {
         width: 100%;
         height: 100%;
+    }
+
+    .projects {
+        padding: 20px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    } 
+
+    .projects a {
+        width: 280px;
+        margin: 40px 20px 20px 20px;
+        display: grid;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 11px #861dff;
+        border-radius: 10px;
+        padding: 20px;
+        transition: transform 0.3s;
     }
 }
 
@@ -213,6 +348,37 @@ nav ul li a{
     .blog img {
         width: 100%;
         height: 100%;
+    }
+
+    .projects {
+        padding: 20px;
+        display: block;
+        justify-content: center;
+    }
+
+    .projects p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    } 
+
+    .projects a {
+        margin: 40px 20px 20px 20px;
+        display: grid;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 11px #861dff;
+        border-radius: 10px;
+        padding: 20px;
+        transition: transform 0.3s;
+    }
+
+    footer img {
+        width: 30px;
+    }
+
+    footer p {
+        font-size: 13px;
     }
 
 }
