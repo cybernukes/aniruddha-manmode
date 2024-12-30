@@ -373,6 +373,10 @@ footer .copyright {
         transition: transform 0.3s;
     }
 
+    .about div {
+        padding: 20px 20px 30px 20px;
+    }
+
     footer img {
         width: 30px;
     }
