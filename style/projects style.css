@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root { 
+    --primary-color: #edf2fc; 
+    --secondary-color: #000000; 
+    --shadow-color: #861dff;
+}
+
+.dark-theme { 
+    --primary-color: #1e1e1e; 
+    --secondary-color: #ffffff; 
+    --shadow-color: #00d1ff; 
+}
+
+body { 
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.banner {
+    background-image: url("/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+}
+
+.nav {
+    display: flex; 
+    padding: 20px;
+    overflow: visible;
+    box-shadow: 0 8px 11px black;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);  
+}
+
+nav {
+    width: 95%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav .icon {
+    align-self: flex-end;
+    float: inline-end;
+}
+
+nav ul li a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: var(--secondary-color);  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);  
+}
+
+.main img {
+    width: 35px;
+}
+
+/*For Tabs*/
+@media only screen and (max-width:1455px) {
+    
+}
+
+/* For mobile*/
+@media only screen and (max-width:700px) {
+
+}
+
