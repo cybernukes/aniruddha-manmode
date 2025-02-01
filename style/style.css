@@ -82,6 +82,7 @@ nav ul li a{
     /* justify-content: center; */
     align-items: center;
     background-color: var(--primary-color);  /* change */
+    background-image: url("/img/aniruddha\ background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -384,7 +385,6 @@ footer .copyright {
         transition: transform 0.3s;
     }
     .main {
-        background-image: url("/img/aniruddha\ background\ mobile.jpg");
         background-size: 100%;
         background-repeat: no-repeat;
     }
