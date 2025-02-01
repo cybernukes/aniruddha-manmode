@@ -83,7 +83,7 @@ nav ul li a{
     align-items: center;
     background-color: var(--primary-color);  /* change */
     background-image: url("/img/aniruddha\ background.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -386,7 +386,7 @@ footer .copyright {
     }
     .main {
         background-size: 100%;
-        background-repeat: no-repeat;
+        background-repeat: cover;
     }
 }
 
