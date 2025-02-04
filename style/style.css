@@ -385,8 +385,7 @@ footer .copyright {
         transition: transform 0.3s;
     }
     .main {
-        background-size: 100%;
-        background-repeat: cover;
+        background-size: cover;
     }
 }
 
