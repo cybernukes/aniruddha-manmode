@@ -77,53 +77,8 @@
       </p>
 
       <div class="blog-container">
-        <div class="blog-card">
-          <a href="/pages/cpp.html">
-            <div class="card-image">
-              <img src="/img/cpp_logo.png" alt="C++ Programming" />
-            </div>
-            <div class="card-content">
-              <h3>C++ Programming</h3>
-              <p>Learn object-oriented programming with C++</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/pages/java.html">
-            <div class="card-image">
-              <img src="/img/Java-Logo copy.png" alt="Java Programming" />
-            </div>
-            <div class="card-content">
-              <h3>Java Programming</h3>
-              <p>Master Java development and frameworks</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/pages/python.html">
-            <div class="card-image">
-              <img src="/img/Python-logo.png" alt="Python Programming" />
-            </div>
-            <div class="card-content">
-              <h3>Python Programming</h3>
-              <p>Discover Python's versatility and libraries</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/pages/web.html">
-            <div class="card-image">
-              <img src="/img/web_logo.png" alt="Web Development" />
-            </div>
-            <div class="card-content">
-              <h3>Web Development</h3>
-              <p>Build responsive websites with HTML, CSS & JavaScript</p>
-            </div>
-          </a>
-        </div>
+        <!-- Content will be loaded dynamically from Firebase -->
+        <div class="loading-spinner">Loading...</div>
       </div>
     </div>
 
@@ -133,44 +88,10 @@
       <p class="section-description">Check out what I've been working on</p>
 
       <div class="projects-container">
-        <div class="project-card">
-          <a href="/pages/projects/cloth rack.html">
-            <div class="card-image">
-              <img src="img/project.png" alt="Cloth Rack" />
-            </div>
-            <div class="card-content">
-              <h3>Cloth Rack</h3>
-              <p>Inventory management system for clothing stores</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="project-card">
-          <a href="/pages/projects/medi stocks.html">
-            <div class="card-image">
-              <img src="img/project.png" alt="Medi Stocks" />
-            </div>
-            <div class="card-content">
-              <h3>Medi Stocks</h3>
-              <p>Medical inventory tracking application</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="project-card">
-          <a href="/pages/projects/doordarsheesamooh.html">
-            <div class="card-image">
-              <img src="img/project.png" alt="Doordarsheesamooh" />
-            </div>
-            <div class="card-content">
-              <h3>Doordarsheesamooh</h3>
-              <p>Community management platform</p>
-            </div>
-          </a>
-        </div>
+        <!-- Content will be loaded dynamically from Firebase -->
+        <div class="loading-spinner">Loading...</div>
       </div>
     </div>
-
     <!-- About Section -->
     <div class="about-section" id="about">
       <h2 class="section-title">About Me</h2>
@@ -179,7 +100,7 @@
       <div class="about-container">
         <div class="about-image">
           <img src="/img/aniruddha.png" alt="Aniruddha Manmode" />
-          <div class="experience-badge">3+ Years Experience</div>
+          <div class="experience-badge">1 Years Experience</div>
         </div>
 
         <div class="about-content">
@@ -268,6 +189,9 @@
       </div>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="firebase-loader.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
